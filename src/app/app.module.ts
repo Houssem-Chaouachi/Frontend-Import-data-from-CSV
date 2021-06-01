@@ -13,6 +13,10 @@ import {MatCardModule} from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { ModelFileComponent } from './model-file/model-file.component';
+import { MatchingComponent } from './matching/matching.component';
 
 
 
@@ -20,7 +24,10 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     AppComponent,
     RegisterComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    ModelFileComponent,
+    MatchingComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +40,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatIconModule,
     MatSnackBarModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    NgxDropzoneModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

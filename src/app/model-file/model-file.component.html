@@ -1,0 +1,13 @@
+
+<h3>Upload your File</h3>
+
+<ngx-dropzone (change)="onSelect($event)">
+	<ngx-dropzone-label>Drop it !!!</ngx-dropzone-label>
+	<ngx-dropzone-preview *ngFor="let f of files ; let i=index" [removable]="true" (removed)="onRemove(f)">
+		<ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+	</ngx-dropzone-preview>
+</ngx-dropzone>
+
+<div class="d-grid gap-2">
+	<button class="btn btn-success"  (click)="ajouter()" type="button">Add</button>
+  </div>
