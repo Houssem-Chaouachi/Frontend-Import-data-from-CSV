@@ -42,7 +42,7 @@ export class RegisterComponent implements OnInit {
         localStorage.setItem("isLogin",JSON.stringify(this.authService.isLoginSubject.value))
        
         
-        this.router.navigateByUrl('/')
+        this.router.navigateByUrl('/home')
        
        }
         
