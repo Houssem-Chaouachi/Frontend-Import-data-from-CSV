@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { ModelFileComponent } from './model-file/model-file.component';
 import { MatchingComponent } from './matching/matching.component';
+import { MatSelectModule} from '@angular/material/select/';
+
 
 
 
@@ -42,6 +44,7 @@ import { MatchingComponent } from './matching/matching.component';
     HttpClientModule,
     MatCardModule,
     NgxDropzoneModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

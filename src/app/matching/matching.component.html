@@ -1,11 +1,16 @@
-<!-- 
-<form [formGroup]="validationForm" >
 
-    <mat-form-field appearance="fill">
-        <mat-label>Categorie</mat-label>
-        <mat-select formControlName="categorie" >
-          <mat-option value="sneakers" >Sneakers</mat-option>
-          
+<form [formGroup]="validationForm" *ngFor="let client of ListClient ; let i=index" >
+  <mat-form-field appearance="fill" >
+    <!-- <mat-label>Favorite food</mat-label> -->
+    <input matInput  value="{{client}}">
+  </mat-form-field>
+
+      <mat-form-field appearance="fill"  >
+        <!-- <p>{{ListSelect[ListSelect.length-1][0]}}</p> -->
+        <mat-label>Choose an option</mat-label>
+        <mat-select  >
+          <mat-option *ngFor="let list of ListSelect[i]" [value]="list">
+            {{list[0]}} {{list[1]}}%</mat-option>
         </mat-select>
       </mat-form-field><br>
-    </form> -->
+    </form>
